@@ -77,33 +77,36 @@ Este proyecto se centra en la normalización de bases de datos utilizando SQLite
 | OBJ-01 | Create SQLite database | ✓ |
 | OBJ-02 | Execute provided SQL scripts | ✓ |
 | OBJ-03 | Analyze non-normalized table | ✓ |
-| OBJ-04 | Normalize database | ✓ |
-| OBJ-05 | Create Chen diagram | ✓ |
+| OBJ-04 | Normalize database |  ✓ |
+| OBJ-05 | Create Chen diagram |  ✓ |
 | OBJ-06 | Create Crow's Foot diagram | ⏳ |
-| OBJ-07 | Create SQL query | ⏳ |
+| OBJ-07 | Create SQL query | ✓ |
 | OBJ-08 | Complete project documentation | ⏳ |
 
 ---
 
 # Project Structure
 
-```text
-database-normalization-sqlite/
-│
-├── database/
-│   └── db_any_company_global.db
-│
-├── sql/
-│   ├── any_company_global_create_table_script.sql
-│   └── any_company_global_insert_data_script.sql
-│
-├── screenshots/
-│   ├── sql-database.png
-│   ├── create-table.png
-│   └── sample-data.png
-│  
-│
-└── README.md
+```
+database-normalization-sqlite
+├─ database
+│  └─ db_any_company_global.db
+├─ diagrams
+│  └─ image-diagram.png
+├─ README.md
+├─ screenshots
+│  ├─ create-table.png
+│  ├─ normalization-tables.png
+│  ├─ query-sale-country.png
+│  ├─ sample-data.png
+│  └─ sql-database.png
+└─ sql
+   ├─ any_company_global_create_table_script.sql
+   ├─ any_company_global_insert_data_script.sql
+   ├─ normalization.sql
+   ├─ populate_normalized_tables.sql
+   └─ query_sale_country.sql
+
 ```
 
 ---
@@ -154,7 +157,7 @@ Este diseño provoca duplicidad de datos y dificulta el mantenimiento de la base
 
 # Project Evidence
 
-## DB-5 | Execute provided SQL scripts
+## Execute provided SQL scripts
 
 ### SQLite database created
 
@@ -179,15 +182,16 @@ Este diseño provoca duplicidad de datos y dificulta el mantenimiento de la base
 
 ---
 
-## Chen Entity Relationship Diagram
+## SQL Query Result
 
-The following diagram represents the conceptual design of the normalized database using Chen notation. It illustrates the entities, their attributes, the relationships between them, and the cardinality of each relationship before the physical implementation in SQLite.
+The following query retrieves the country where the sale with ID **3** was performed after the database normalization process.
 
-El siguiente diagrama representa el diseño conceptual de la base de datos normalizada utilizando la notación de Chen. En él se muestran las entidades, sus atributos, las relaciones existentes entre ellas y la cardinalidad de cada relación antes de su implementación física en SQLite.
+La siguiente consulta obtiene el país donde se realizó la venta con identificador **3** una vez normalizada la base de datos.
 
-![Chen Diagram](./screenshots/image-diagram.png)
+![SQL Query Result](./screenshots/query-sale-country.png)
 
 ---
+
 The database was successfully initialized using the SQL scripts provided by the bootcamp. The resulting table (`sales_not_normalized`) will serve as the starting point for the normalization process in the following tasks.
 
 La base de datos se inicializó correctamente utilizando los scripts SQL proporcionados por el bootcamp. La tabla resultante (`sales_not_normalized`) servirá como punto de partida para el proceso de normalización en las siguientes tareas.
