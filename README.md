@@ -76,7 +76,7 @@ Este proyecto se centra en la normalización de bases de datos utilizando SQLite
 |----|-------------|:------:|
 | OBJ-01 | Create SQLite database | ✓ |
 | OBJ-02 | Execute provided SQL scripts | ✓ |
-| OBJ-03 | Analyze non-normalized table | ⏳ |
+| OBJ-03 | Analyze non-normalized table | ✓ |
 | OBJ-04 | Normalize database | ⏳ |
 | OBJ-05 | Create Chen diagram | ⏳ |
 | OBJ-06 | Create Crow's Foot diagram | ⏳ |
@@ -173,7 +173,11 @@ Este diseño provoca duplicidad de datos y dificulta el mantenimiento de la base
 ![Sample data](./screenshots/sample-data.png)
 
 ---
+## Database normalization
 
+![Normalized tables](./screenshots/normalization-tables.png)
+
+---
 The database was successfully initialized using the SQL scripts provided by the bootcamp. The resulting table (`sales_not_normalized`) will serve as the starting point for the normalization process in the following tasks.
 
 La base de datos se inicializó correctamente utilizando los scripts SQL proporcionados por el bootcamp. La tabla resultante (`sales_not_normalized`) servirá como punto de partida para el proceso de normalización en las siguientes tareas.

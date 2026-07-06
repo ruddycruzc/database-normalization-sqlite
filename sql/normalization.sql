@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS cities;
+DROP TABLE IF EXISTS countries;
+DROP TABLE IF EXISTS continents;
+
 CREATE TABLE continents (
     continent_id INTEGER PRIMARY KEY AUTOINCREMENT,
     continent_name TEXT NOT NULL UNIQUE
