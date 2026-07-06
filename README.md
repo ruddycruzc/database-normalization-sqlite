@@ -42,18 +42,31 @@ Database normalization project developed during the **Full Stack Java Bootcamp**
 | [![Tech Stack](https://skillicons.dev/icons?i=github)](https://skillicons.dev) GitHub | Source code hosting |
 | [![Tech Stack](https://skillicons.dev/icons?i=vscode)](https://skillicons.dev) Visual Studio Code | Development environment |
 | diagrams.net | Database diagram design |
- 
+
+---
+
+# Summary
+
+- [Overview](#overview)
+- [Objectives](#objectives)
+- [Project Structure](#project-structure)
+- [Database Design](#database-design)
+- [Implementation](#implementation)
+- [Project Evidence](#project-evidence)
+- [Learning Outcomes](#learning-outcomes)
+- [Author](#author)
+
 ---
 
 # Overview
 
 ### 🇬🇧 English
 
-This project focuses on database normalization using SQLite. Starting from a non-normalized table, the objective is to redesign the database by applying normalization principles, creating entity-relationship diagrams, and validating the final structure through SQL queries.
+This project focuses on database normalization using SQLite. Starting from a non-normalized table, the objective is to redesign the database by applying normalization principles, creating Entity-Relationship diagrams, and validating the final database through SQL queries.
 
 ### 🇪🇸 Español
 
-Este proyecto se centra en la normalización de bases de datos utilizando SQLite. Partiendo de una tabla no normalizada, el objetivo es rediseñar la base de datos aplicando los principios de normalización, creando diagramas entidad-relación y validando la estructura final mediante consultas SQL.
+Este proyecto se centra en la normalización de bases de datos utilizando SQLite. Partiendo de una tabla no normalizada, el objetivo es rediseñar la base de datos aplicando los principios de normalización, creando diagramas Entidad-Relación y validando la estructura final mediante consultas SQL.
 
 ---
 
@@ -62,7 +75,7 @@ Este proyecto se centra en la normalización de bases de datos utilizando SQLite
 | ID | Description | Status |
 |----|-------------|:------:|
 | OBJ-01 | Create SQLite database | ✓ |
-| OBJ-02 | Execute provided SQL scripts | ⏳ |
+| OBJ-02 | Execute provided SQL scripts | ✓ |
 | OBJ-03 | Analyze non-normalized table | ⏳ |
 | OBJ-04 | Normalize database | ⏳ |
 | OBJ-05 | Create Chen diagram | ⏳ |
@@ -77,18 +90,27 @@ Este proyecto se centra en la normalización de bases de datos utilizando SQLite
 ```text
 database-normalization-sqlite/
 │
-├── README.md
+├── database/
+│   └── db_any_company_global.db
+│
 ├── sql/
-├── diagrams/
+│   ├── any_company_global_create_table_script.sql
+│   └── any_company_global_insert_data_script.sql
+│
 ├── screenshots/
-└── docs/
+│   ├── sql-database.png
+│   ├── create-table.png
+│   └── sample-data.png
+│  
+│
+└── README.md
 ```
 
 ---
 
 # Database Design
 
-This section will document the normalization process, explaining the transition from the original table to the final relational model.
+This section will document the normalization process, explaining the transition from the original non-normalized table to the final relational model.
 
 _Esta sección documentará el proceso de normalización, explicando la evolución desde la tabla original hasta el modelo relacional final._
 
@@ -96,34 +118,51 @@ _Esta sección documentará el proceso de normalización, explicando la evoluci�
 
 # Implementation
 
-_Project implementation will be documented as each milestone is completed._
+## DB-5 | Execute provided SQL scripts
 
-_La implementación se irá documentando conforme se completen las diferentes tareas del proyecto._
+### Completed Tasks
+
+- ✓ Created the SQLite database.
+- ✓ Executed the SQL script provided to create the initial table.
+- ✓ Imported the sample dataset into the database.
+- ✓ Verified that the table and records were created successfully.
+- ✓ Prepared the project to begin the normalization process.
 
 ---
 
 # Project Evidence
 
-This section will include:
+## DB-5 | Execute provided SQL scripts
 
-## SQLite database
+### SQLite database created
 
-
-![SQLite database](./screenshots/create-sql-database.png)
+![SQLite database](./screenshots/sql-database.png)
 
 ---
-- SQL scripts execution
-- Chen diagram
-- Crow's Foot diagram
-- SQL query result
+
+### Table created successfully
+
+![Create table](./screenshots/create-table.png)
+
+---
+
+### Sample data inserted
+
+![Sample data](./screenshots/sample-data.png)
+
+---
+
+The database was successfully initialized using the SQL scripts provided by the bootcamp. The resulting table (`sales_not_normalized`) will serve as the starting point for the normalization process in the following tasks.
+
+La base de datos se inicializó correctamente utilizando los scripts SQL proporcionados por el bootcamp. La tabla resultante (`sales_not_normalized`) servirá como punto de partida para el proceso de normalización en las siguientes tareas.
 
 ---
 
 # Learning Outcomes
 
-This section will be completed at the end of the project.
+This section will be updated throughout the project as new concepts related to database design and normalization are learned.
 
-_Esta sección se completará al finalizar el proyecto._
+_Esta sección se actualizará durante el desarrollo del proyecto conforme se vayan aprendiendo nuevos conceptos sobre diseño y normalización de bases de datos._
 
 ---
 
