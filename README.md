@@ -61,7 +61,7 @@ Este proyecto se centra en la normalización de bases de datos utilizando SQLite
 
 | ID | Description | Status |
 |----|-------------|:------:|
-| OBJ-01 | Create SQLite database | ⏳ |
+| OBJ-01 | Create SQLite database | ✓ |
 | OBJ-02 | Execute provided SQL scripts | ⏳ |
 | OBJ-03 | Analyze non-normalized table | ⏳ |
 | OBJ-04 | Normalize database | ⏳ |
@@ -106,7 +106,12 @@ _La implementación se irá documentando conforme se completen las diferentes ta
 
 This section will include:
 
-- SQLite database
+## SQLite database
+
+
+![SQLite database](./screenshots/create-sql-database.png)
+
+---
 - SQL scripts execution
 - Chen diagram
 - Crow's Foot diagram
