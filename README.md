@@ -88,9 +88,31 @@ database-normalization-sqlite/
 
 # Database Design
 
-This section will document the normalization process, explaining the transition from the original table to the final relational model.
+## Initial Analysis
 
-_Esta sección documentará el proceso de normalización, explicando la evolución desde la tabla original hasta el modelo relacional final._
+### English
+
+The original table stores different types of information in a single entity.
+
+Three potential entities were identified:
+
+- Product information
+- Geographic information
+- Sales information
+
+This design produces duplicated data and makes the database difficult to maintain.
+
+### Español
+
+La tabla original almacena diferentes tipos de información en una única entidad.
+
+Se identifican tres posibles entidades:
+
+- Información de productos
+- Información geográfica
+- Información de ventas
+
+Este diseño provoca duplicidad de datos y dificulta el mantenimiento de la base de datos.
 
 ---
 
