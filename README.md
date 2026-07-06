@@ -77,8 +77,8 @@ Este proyecto se centra en la normalización de bases de datos utilizando SQLite
 | OBJ-01 | Create SQLite database | ✓ |
 | OBJ-02 | Execute provided SQL scripts | ✓ |
 | OBJ-03 | Analyze non-normalized table | ✓ |
-| OBJ-04 | Normalize database | ⏳ |
-| OBJ-05 | Create Chen diagram | ⏳ |
+| OBJ-04 | Normalize database | ✓ |
+| OBJ-05 | Create Chen diagram | ✓ |
 | OBJ-06 | Create Crow's Foot diagram | ⏳ |
 | OBJ-07 | Create SQL query | ⏳ |
 | OBJ-08 | Complete project documentation | ⏳ |
@@ -176,6 +176,16 @@ Este diseño provoca duplicidad de datos y dificulta el mantenimiento de la base
 ## Database normalization
 
 ![Normalized tables](./screenshots/normalization-tables.png)
+
+---
+
+## Chen Entity Relationship Diagram
+
+The following diagram represents the conceptual design of the normalized database using Chen notation. It illustrates the entities, their attributes, the relationships between them, and the cardinality of each relationship before the physical implementation in SQLite.
+
+El siguiente diagrama representa el diseño conceptual de la base de datos normalizada utilizando la notación de Chen. En él se muestran las entidades, sus atributos, las relaciones existentes entre ellas y la cardinalidad de cada relación antes de su implementación física en SQLite.
+
+![Chen Diagram](./screenshots/image-diagram.png)
 
 ---
 The database was successfully initialized using the SQL scripts provided by the bootcamp. The resulting table (`sales_not_normalized`) will serve as the starting point for the normalization process in the following tasks.
