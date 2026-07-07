@@ -12,7 +12,20 @@ Database normalization project developed during the **Full Stack Java Bootcamp**
 
 <br><br>
 
-[![Tech Stack](https://skillicons.dev/icons?i=sqlite,git,github,vscode)](https://skillicons.dev)
+
+
+# Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| [![Tech Stack](https://skillicons.dev/icons?i=sqlite)](https://skillicons.dev) SQLite | Relational database |
+| DBeaver | Database management |
+| [![Tech Stack](https://skillicons.dev/icons?i=git)](https://skillicons.dev) Git | Version control |
+| [![Tech Stack](https://skillicons.dev/icons?i=github)](https://skillicons.dev) GitHub | Source code hosting |
+| [![Tech Stack](https://skillicons.dev/icons?i=vscode)](https://skillicons.dev) Visual Studio Code | Development environment |
+| diagrams.net | Database diagram design with draw.io |
+
+
 
 </div>
 
@@ -29,19 +42,6 @@ Database normalization project developed during the **Full Stack Java Bootcamp**
 | **Repository Type** | Academic Project |
 | **Database** | SQLite |
 | **Maintainer** | Ruddy P. Cruz Campoverde |
-
----
-
-# Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| [![Tech Stack](https://skillicons.dev/icons?i=sqlite)](https://skillicons.dev) SQLite | Relational database |
-| DBeaver | Database management |
-| [![Tech Stack](https://skillicons.dev/icons?i=git)](https://skillicons.dev) Git | Version control |
-| [![Tech Stack](https://skillicons.dev/icons?i=github)](https://skillicons.dev) GitHub | Source code hosting |
-| [![Tech Stack](https://skillicons.dev/icons?i=vscode)](https://skillicons.dev) Visual Studio Code | Development environment |
-| diagrams.net | Database diagram design |
 
 ---
 
