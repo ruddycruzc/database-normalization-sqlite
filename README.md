@@ -50,11 +50,13 @@ Database normalization project developed during the **Full Stack Java Bootcamp**
 - [Overview](#overview)
 - [Objectives](#objectives)
 - [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
 - [Database Design](#database-design)
 - [Implementation](#implementation)
 - [Project Evidence](#project-evidence)
 - [Learning Outcomes](#learning-outcomes)
 - [Author](#author)
+- [Developer's Note](#developers-note)
 
 ---
 
@@ -113,6 +115,82 @@ database-normalization-sqlite
 ```
 
 ---
+# Getting Started
+
+### 🇬🇧 English
+
+### Requirements
+
+- DBeaver (or any SQLite-compatible database manager)
+- Git
+
+### Clone the repository
+
+```bash
+git clone https://github.com/ruddycruzc/database-normalization-sqlite.git
+```
+
+```bash
+cd database-normalization-sqlite
+```
+
+### Open the database
+
+Open the file:
+
+```text
+database/db_any_company_global.db
+```
+
+using DBeaver.
+
+If you want to recreate the database from scratch, execute the SQL scripts inside the `sql/` folder in the following order:
+
+1. `any_company_global_create_table_script.sql`
+2. `any_company_global_insert_data_script.sql`
+3. `normalization.sql`
+4. `populate_normalized_tables.sql`
+5. `query-sale-country.sql`
+
+---
+
+### 🇪🇸 Español
+
+### Requisitos
+
+- DBeaver (o cualquier gestor compatible con SQLite)
+- Git
+
+### Clonar el repositorio
+
+```bash
+git clone https://github.com/ruddycruzc/database-normalization-sqlite.git
+```
+
+```bash
+cd database-normalization-sqlite
+```
+
+### Abrir la base de datos
+
+Abre el archivo:
+
+```text
+database/db_any_company_global.db
+```
+
+con DBeaver.
+
+Si prefieres recrear la base de datos desde cero, ejecuta los scripts de la carpeta `sql` en el siguiente orden:
+
+1. `any_company_global_create_table_script.sql`
+2. `any_company_global_insert_data_script.sql`
+3. `normalization.sql`
+4. `populate_normalized_tables.sql`
+5. `query-sale-country.sql`
+
+---
+
 
 # Database Design
 
@@ -257,7 +335,21 @@ Before implementing the database, the conceptual model was represented using Che
 
 Antes de implementar la base de datos, el modelo conceptual se representó mediante la notación de Chen para validar las entidades y sus relaciones.
 
-![Chen Diagram](./diagrams/chen-diagram.png)
+![Chen Diagram](./diagrams/image-diagram.png)
+
+---
+## Crow's Foot Diagram
+
+### 🇬🇧 English
+
+Once the database was implemented, DBeaver automatically generated the physical Entity-Relationship diagram. Unlike the Chen diagram, this one represents the actual database structure, including tables, primary keys and foreign keys.
+
+### 🇪🇸 Español
+
+Una vez implementada la base de datos, DBeaver generó automáticamente el diagrama Entidad-Relación físico. A diferencia del diagrama de Chen, este representa la estructura real de la base de datos, incluyendo las tablas, las claves primarias y las claves foráneas.
+
+![Crow's Foot Diagram](./diagrams/crow-foot-diagram.png)
+
 
 ---
 
@@ -303,6 +395,7 @@ WHERE sale_id = 3;
 ![SQL Query Result](./screenshots/query-sale-country.png)
 
 ---
+
 # Learning Outcomes
 
 ### 🇬🇧 English
@@ -320,7 +413,8 @@ Some of the concepts I reinforced during this project were:
 - SQL JOIN operations.
 - Relational database design.
 
-The biggest lesson was discovering that adding more tables does not necessarily make a database more complicated. If the design is correct, it actually becomes much easier to understand and maintain.
+The biggest surprise was realizing that adding more tables actually made the database easier to understand. I definitely wasn't expecting that when I started the project.
+
 
 ### 🇪🇸 Español
 
@@ -337,19 +431,7 @@ Algunos de los conceptos que reforcé durante este proyecto fueron:
 - Consultas SQL utilizando JOIN.
 - Diseño de bases de datos relacionales.
 
-La mayor lección fue descubrir que añadir más tablas no significa complicar una base de datos. Si el diseño está bien planteado, ocurre justo lo contrario: todo resulta mucho más sencillo de entender y mantener.
-
----
-
-# Next Steps
-
-### 🇬🇧 English
-
-The remaining work focuses on completing the Crow's Foot diagram, reviewing the documentation and polishing the project before its final delivery.
-
-### 🇪🇸 Español
-
-El trabajo pendiente consiste en completar el diagrama Crow's Foot, revisar toda la documentación y dar los últimos retoques al proyecto antes de su entrega final.
+Lo que más me sorprendió fue darme cuenta de que añadir más tablas hacía que la base de datos fuera más fácil de entender. Desde luego, no era lo que esperaba cuando empecé la práctica.
 
 ---
 
@@ -362,36 +444,48 @@ El trabajo pendiente consiste en completar el diagrama Crow's Foot, revisar toda
 ---
 
 # Developer's Note
-<div align="center">
 
-**Thanks for visiting this repository.**
-
----
-
-> **🇬🇧 English**
+> ### 🇬🇧 English
 >
-> ***Things I learned during this project:***
-> - Normalization is less scary than it sounds.
-> - SQL JOINs eventually stop looking like magic.
+> Every project ends up teaching you something you weren't expecting.
 >
->***Behind this repository there are:***
+> In this one I learned that database normalization isn't about creating more tables, it's about giving every piece of information its own place.
+>
+> I also learned that Git has a great sense of humour... especially when you're the one creating your own merge conflicts.
+>
+> Behind this repository there are:
+>
 > - More coffees than SQL scripts.
-> - A few Git branches that probably didn't need to exist.
-> - One merge conflict caused entirely by me.
-> - Several "this should work..." moments.
-> - One database that finally made sense.
->Looking back, I probably spent more time arguing with Git than with SQLite, but somehow both ended up behaving.*
+> - A few branches that existed for much less time than I expected.
+> - One afternoon wondering why `develop` refused to cooperate.
+> - Several "this has to work now..." moments.
+> - And one database that finally stopped repeating itself.
+>
+> Looking back, I probably spent more time negotiating with Git than with SQLite. Luckily, both of them eventually agreed to work with me.
+
 ---
->***🇪🇸 Español***
+
+> ### 🇪🇸 Español
 >
-> ***Cosas que aprendí durante este proyecto:***
-> - La normalización da menos miedo del que parece.
-> - Los JOIN dejan de parecer magia después de hacer unos cuantos.
+> Todos los proyectos acaban enseñándote algo que no esperabas.
 >
->***Detrás de este repositorio hay:***
+> En este descubrí que normalizar una base de datos no consiste en crear más tablas, sino en conseguir que cada dato tenga su propio sitio.
+>
+> También descubrí que Git tiene bastante sentido del humor... sobre todo cuando los conflictos de merge te los has provocado tú mismo.
+>
+> Detrás de este repositorio hay:
+>
 > - Más cafés que scripts SQL.
-> - Unas cuantas ramas de Git que probablemente nunca hicieron falta.
-> - Un conflicto de merge provocado íntegramente por mí.
-> - Bastantes momentos de "esto debería funcionar...".
-> - Y una base de datos que, por fin, terminó teniendo sentido.
->Mirándolo ahora con perspectiva, creo que discutí más con Git que con SQLite, aunque al final los dos acabaron portándose bien.
+> - Unas cuantas ramas que duraron bastante menos de lo que imaginaba.
+> - Una tarde intentando convencer a `develop` de que colaborara.
+> - Bastantes momentos de "ahora sí tiene que funcionar...".
+> - Y una base de datos que, por fin, dejó de repetir la misma historia una y otra vez.
+>
+> Mirándolo ahora con perspectiva, creo que pasé más tiempo negociando con Git que con SQLite. Por suerte, al final los dos aceptaron colaborar.
+
+
+# License
+
+This project was developed for educational purposes as part of the Full Stack Java Bootcamp.
+
+_Este proyecto fue desarrollado con fines educativos como parte del Full Stack Java Bootcamp._
