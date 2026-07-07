@@ -24,7 +24,7 @@ Database normalization project developed during the **Full Stack Java Bootcamp**
 |-----------|-------|
 | **Project** | SQLite Database Normalization |
 | **Version** | 1.0.0 |
-| **Status** | 🚧 In Progress |
+| **Status** |  Completed |
 | **Bootcamp** | Full Stack Java |
 | **Repository Type** | Academic Project |
 | **Database** | SQLite |
@@ -85,9 +85,9 @@ Al principio parecía que crear más tablas solo iba a complicar las cosas. Al t
 | OBJ-03 | Analyze non-normalized table | ✓ |
 | OBJ-04 | Normalize database | ✓ |
 | OBJ-05 | Create Chen diagram | ✓ |
-| OBJ-06 | Create Crow's Foot diagram | ⏳ |
+| OBJ-06 | Create Crow's Foot diagram | ✓  |
 | OBJ-07 | Create SQL query | ✓ |
-| OBJ-08 | Complete project documentation | ⏳ |
+| OBJ-08 | Complete project documentation | ✓  |
 
 ---
 
