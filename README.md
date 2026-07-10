@@ -352,6 +352,31 @@ Una vez implementada la base de datos, DBeaver generó automáticamente el diagr
 
 
 ---
+### Reading the Diagram
+
+#### 🇬🇧 English
+
+The Chen diagram represents the conceptual design of the database.
+
+- Rectangles represent entities.
+- Ovals represent attributes.
+- Underlined attributes are primary keys.
+- Diamonds represent relationships.
+- The numbers (`1` and `N`) indicate the cardinality between entities.
+
+---
+
+#### 🇪🇸 Español
+
+El diagrama de Chen representa el diseño conceptual de la base de datos.
+
+- Los rectángulos representan entidades.
+- Los óvalos representan atributos.
+- Los atributos subrayados son claves primarias.
+- Los rombos representan las relaciones.
+- Los números (`1` y `N`) indican la cardinalidad entre las entidades.
+
+---
 
 ## Normalized Database
 
